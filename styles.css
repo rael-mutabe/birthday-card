@@ -4,7 +4,7 @@
   box-sizing: border-box;
   /* border: 1px solid; */
   color: white;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 body {
   /* border: 1px solid; */
@@ -53,7 +53,7 @@ h3 {
 }
 .titleContainer {
   display: flex;
-  /* border: 1px solid;/ */
+  /* border: 1px solid; */
   justify-content: space-around;
   align-items: center;
 }
@@ -70,11 +70,35 @@ i {
   animation: infinite dunda 2s ease-out;
 }
 @keyframes dunda {
-    0%{
-        scale: 0.5;
-    }
-    100%{
-        scale: 1;
-    }
-    
+  0% {
+    scale: 0.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    border: 5px groove #2fff7f;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .heart {
+    width: 20%;
+  }
+  i {
+    font-size: 80px;
+  }
+  h3 {
+    margin: 5px;
+    font-size: 15px;
+    text-align: center;
+  }
+  h1{
+    font-size: 22px;
+  }
 }
